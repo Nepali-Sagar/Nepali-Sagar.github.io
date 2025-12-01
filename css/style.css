@@ -28,6 +28,7 @@ header {
   display: flex;
   justify-content: start;
   align-items: center;
+  box-shadow: 5px 5px 50px rgb(119, 118, 118);
 }
 
 header .header-leftside {
