@@ -1,4 +1,4 @@
-@media (max-width: 490px) {
+@media (max-width: 600px) {
   .left-div {
     display: flex;
     justify-content: center;
@@ -19,6 +19,14 @@
   }
 
   .user-cv {
+    align-items: center;
+  }
+
+    .cursor{
+    display: none;
+  }
+
+  footer{
     align-items: center;
   }
 }

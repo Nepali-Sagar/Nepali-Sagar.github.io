@@ -24,8 +24,161 @@ body {
     "footer footer footer";
 }
 
+.contact-box {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  width: 30%;
+  height: 135px;
+  background: rgba(10, 20, 40, 0.25);
+  backdrop-filter: blur(30px) saturate(180%);
+  z-index: 5;
+  visibility: hidden;
+  display: none;
+  border-radius: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactBtn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgb(224, 72, 72);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+  color: black;
+}
+#contactBtn:hover::after {
+  content: "x";
+}
+
+.contact-box-link-pages {
+  width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-box-link-pages a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.linkedin-icon {
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+
+.linkedin-icon:hover::after {
+  content: "Linkedin";
+  color: white;
+}
+
+.github-icon {
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+
+.github-icon:hover::after {
+  content: "GitHub";
+  color: white;
+}
+
+.gmail-icon {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.gmail-icon:hover::after {
+  content: "Gmail";
+  color: white;
+}
+
+.instagram-icon {
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+
+.instagram-icon:hover::after {
+  content: "Instagram";
+  color: white;
+}
+
+/*  */
+
+.linkedin-icon img {
+  width: 90px;
+}
+
+.github-icon img {
+  width: 90px;
+}
+
+.gmail-icon img {
+  width: 90px;
+}
+
+.instagram-icon img {
+  width: 90px;
+}
+
 header {
   grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 32px;
+}
+
+nav a {
+  color: black;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+  transition: 0.5s ease-in;
+}
+
+nav a:first-child {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  font-size: 1.3em;
+  transition: font-size 0.5s ease-out;
+}
+
+.contactBtn:hover {
+  font-weight: normal;
+  font-size: 1.3em;
+}
+
+.contactBtn:active {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 main {
@@ -58,7 +211,7 @@ main {
   }
   to {
     opacity: 100%;
-    transform: skewY(-5deg);
+    transform: skewY(-2deg);
   }
 }
 
@@ -122,13 +275,13 @@ footer p {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
-  background: rgba(204, 255, 0, 0.7);
+  width: 15px;
+  height: 15px;
+  background-color: white;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s ease;
+  transition: transform 0.05s ease;
   z-index: 9999;
-  mix-blend-mode:difference;
+  mix-blend-mode: difference;
 }
